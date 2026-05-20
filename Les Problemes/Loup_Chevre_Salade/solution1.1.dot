@@ -1,0 +1,35 @@
+digraph G {
+    node [shape=circle];
+
+    // Définition des nœuds particuliers (couleurs)
+    "(LCSB | Vide)" [color=green];
+    "(Vide | LCSB)" [color=blue];
+
+    // Transitions étape par étape
+    "(LCSB | Vide)" -> "(LS | CB)" [label="C" color=red fontcolor=blue];
+    
+    "(LS | CB)" -> "(LSB | C)" [label="Nothing", color=red , fontcolor=blue];
+    
+    // Séparation (le diamant)
+    "(LSB | C)" -> "(S | LCB)" [label="L", color=red , fontcolor=blue ];
+    "(LSB | C)" -> "(L | CSB)" [label="S" , color=pink , fontcolor=blue];
+    
+    "(S | LCB)" -> "(SCB | L)" [label="C" , color=red , fontcolor=blue];
+    "(L | CSB)" -> "(LCB | S)" [label="C" , color=pink , fontcolor=blue];
+    
+    // Jonction
+    "(SCB | L)" -> "(C | LSB)" [label="S" , color=red, fontcolor=blue];
+    "(LCB | S)" -> "(L | CSB)" [label="L", color=pink , style=invis , fontcolor=blue]; // Juste pour l'alignement si besoin
+    "(LCB | S)" -> "(C | LSB)" [label="L", color=pink , fontcolor=blue];
+    
+    // Fin de la séquence
+    "(C | LSB)" -> "(CB | LS)" [label="Nothing", fontcolor=blue , color=red];
+    "(CB | LS)" -> "(Vide | LCSB)" [label="C" , fontcolor=blue , color=red] ;
+}
+
+
+
+
+
+
+

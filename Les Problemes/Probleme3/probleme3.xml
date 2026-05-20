@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance format="Talos">
+
+<values>
+    <valmatrix id="transitions">
+
+        <!-- LEFT → RIGHT (B: 0→1), on retire dM missionnaires et dC cannibales de la rive gauche -->
+
+        <!-- Depuis (5,5,0) -->
+        <data>5 5 0  4 4 1</data>
+        <data>5 5 0  4 3 1</data>
+        <data>5 5 0  3 4 1</data>
+
+        <!-- Depuis (4,4,0) -->
+        <data>4 4 0  3 3 1</data>
+        <data>4 4 0  3 2 1</data>
+        <data>4 4 0  2 3 1</data>
+
+        <!-- Depuis (3,3,0) -->
+        <data>3 3 0  2 2 1</data>
+        <data>3 3 0  2 1 1</data>
+        <data>3 3 0  1 2 1</data>
+        <data>3 3 0  3 2 1</data>
+        <data>3 3 0  3 1 1</data>
+        <data>3 3 0  3 0 1</data>
+        <data>3 3 0  2 3 1</data>
+        <data>3 3 0  1 3 1</data>
+        <data>3 3 0  0 3 1</data>
+
+        <!-- Depuis (2,2,0) -->
+        <data>2 2 0  1 1 1</data>
+        <data>2 2 0  2 1 1</data>
+        <data>2 2 0  2 0 1</data>
+        <data>2 2 0  1 2 1</data>
+        <data>2 2 0  0 2 1</data>
+
+        <!-- Depuis (1,1,0) -->
+        <data>1 1 0  0 0 1</data>
+        <data>1 1 0  1 0 1</data>
+        <data>1 1 0  0 1 1</data>
+
+        <!-- Depuis (5,3,0) -->
+        <data>5 3 0  4 3 1</data>
+        <data>5 3 0  3 3 1</data>
+        <data>5 3 0  5 2 1</data>
+        <data>5 3 0  5 1 1</data>
+        <data>5 3 0  5 0 1</data>
+        <data>5 3 0  4 2 1</data>
+
+        <!-- Depuis (4,2,0) -->
+        <data>4 2 0  3 2 1</data>
+        <data>4 2 0  2 2 1</data>
+        <data>4 2 0  4 1 1</data>
+        <data>4 2 0  4 0 1</data>
+        <data>4 2 0  3 1 1</data>
+
+        <!-- Depuis (3,1,0) -->
+        <data>3 1 0  2 1 1</data>
+        <data>3 1 0  1 1 1</data>
+        <data>3 1 0  3 0 1</data>
+        <data>3 1 0  2 0 1</data>
+        <data>3 1 0  1 0 1</data>
+
+        <!-- Depuis (2,0,0) -->
+        <data>2 0 0  1 0 1</data>
+        <data>2 0 0  0 0 1</data>
+
+        <!-- Depuis (1,0,0) -->
+        <data>1 0 0  0 0 1</data>
+
+        <!-- Depuis (5,4,0) -->
+        <data>5 4 0  4 4 1</data>
+        <data>5 4 0  3 4 1</data>
+        <data>5 4 0  5 3 1</data>
+        <data>5 4 0  5 2 1</data>
+        <data>5 4 0  4 3 1</data>
+
+        <!-- RIGHT → LEFT (B: 1→0), on rajoute dM et dC sur la rive gauche -->
+
+        <!-- Depuis (4,4,1) -->
+        <data>4 4 1  5 4 0</data>
+        <data>4 4 1  4 5 0</data>
+        <data>4 4 1  5 5 0</data>
+
+        <!-- Depuis (3,3,1) -->
+        <data>3 3 1  4 3 0</data>
+        <data>3 3 1  3 4 0</data>
+        <data>3 3 1  4 4 0</data>
+        <data>3 3 1  5 3 0</data>
+        <data>3 3 1  3 5 0</data>
+
+        <!-- Depuis (2,2,1) -->
+        <data>2 2 1  3 2 0</data>
+        <data>2 2 1  2 3 0</data>
+        <data>2 2 1  3 3 0</data>
+        <data>2 2 1  4 2 0</data>
+        <data>2 2 1  2 4 0</data>
+
+        <!-- Depuis (1,1,1) -->
+        <data>1 1 1  2 1 0</data>
+        <data>1 1 1  1 2 0</data>
+        <data>1 1 1  2 2 0</data>
+        <data>1 1 1  3 1 0</data>
+        <data>1 1 1  1 3 0</data>
+
+        <!-- Depuis (0,0,1) -->
+        <data>0 0 1  1 0 0</data>
+        <data>0 0 1  0 1 0</data>
+        <data>0 0 1  1 1 0</data>
+        <data>0 0 1  2 0 0</data>
+        <data>0 0 1  0 2 0</data>
+
+        <!-- Depuis (3,2,1) -->
+        <data>3 2 1  4 2 0</data>
+        <data>3 2 1  3 3 0</data>
+        <data>3 2 1  4 3 0</data>
+        <data>3 2 1  5 2 0</data>
+        <data>3 2 1  3 4 0</data>
+
+        <!-- Depuis (2,1,1) -->
+        <data>2 1 1  3 1 0</data>
+        <data>2 1 1  2 2 0</data>
+        <data>2 1 1  3 2 0</data>
+        <data>2 1 1  4 1 0</data>
+        <data>2 1 1  2 3 0</data>
+
+        <!-- Depuis (1,0,1) -->
+        <data>1 0 1  2 0 0</data>
+        <data>1 0 1  1 1 0</data>
+        <data>1 0 1  2 1 0</data>
+        <data>1 0 1  3 0 0</data>
+
+        <!-- Depuis (4,3,1) -->
+        <data>4 3 1  5 3 0</data>
+        <data>4 3 1  4 4 0</data>
+        <data>4 3 1  5 4 0</data>
+        <data>4 3 1  5 5 0</data>
+
+        <!-- Depuis (5,2,1) -->
+        <data>5 2 1  5 3 0</data>
+        <data>5 2 1  5 4 0</data>
+        <data>5 2 1  5 5 0</data>
+
+        <!-- Depuis (5,3,1) -->
+        <data>5 3 1  5 4 0</data>
+        <data>5 3 1  5 5 0</data>
+
+        <!-- Depuis (4,2,1) -->
+        <data>4 2 1  5 2 0</data>
+        <data>4 2 1  4 3 0</data>
+        <data>4 2 1  5 3 0</data>
+        <data>4 2 1  5 4 0</data>
+
+    </valmatrix>
+</values>
+
+<variables>
+    <var id="M" type="int extensional">0 1 2 3 4 5</var>
+    <var id="C" type="int extensional">0 1 2 3 4 5</var>
+    <var id="B" type="int extensional">0 1</var>
+
+    <vararray id="state">M C B</vararray>
+
+    <var id="iM">5</var>
+    <var id="iC">5</var>
+    <var id="iB">0</var>
+    <vararray id="initial">iM iC iB</vararray>
+
+    <var id="fM">0</var>
+    <var id="fC">0</var>
+    <var id="fB">1</var>
+    <vararray id="final">fM fC fB</vararray>
+
+</variables>
+
+</instance>

@@ -1,0 +1,80 @@
+digraph G {
+    graph [nodesep=0.4, ranksep=0.4];
+    node [shape=circle, style=filled, fillcolor=pink, fontcolor=blue];
+
+    Start -> n00;
+
+    n00  [label="G=0 P=0"];
+    n03  [label="G=0 P=3"];
+    n30  [label="G=3 P=0"];
+    n50  [label="G=5 P=0"];
+    n52  [label="G=5 P=2"];
+    n53  [label="G=5 P=3"];
+    n23  [label="G=2 P=3"];
+    n20  [label="G=2 P=0"];
+    n40  [label="G=4 P=0"];
+    n43  [label="G=4 P=3"];
+    n02  [label="G=0 P=2"];
+    n33  [label="G=3 P=3"];
+    n51  [label="G=5 P=1"];
+    n01  [label="G=0 P=1"];
+    n10  [label="G=1 P=0"];
+    n13  [label="G=1 P=3"];
+
+    // ALL EDGES (graphe complet)
+
+    n00 -> n03;
+    n00 -> n50;
+
+    n03 -> n00;
+    n03 -> n53;
+    n03 -> n30;
+
+    n50 -> n23;
+    n50 -> n00;
+
+    n53 -> n50;
+    n53 -> n03;
+
+    n30 -> n03;
+    n30 -> n33;
+    n30 -> n53;
+
+    n23 -> n20;
+    n23 -> n03;
+
+    n20 -> n02;
+
+    n02 -> n52;
+
+    n52 -> n43;
+    n52 -> n02;
+    n52 -> n50;
+
+    n43 -> n40;
+    n43 -> n03;
+
+    n40 -> End;
+
+    n33 -> n51;
+    n51 -> n01;
+    n01 -> n10;
+    n10 -> n13;
+    n13 -> n40;
+
+
+    //solution6 : 
+
+    n00 -> n03 [color=yellow, penwidth=3];
+    n03 -> n53 [color=yellow, penwidth=3];
+    n53 -> n50 [color=yellow, penwidth=3];
+    n50 -> n23 [color=yellow, penwidth=3];
+    n23 -> n20 [color=yellow, penwidth=3];
+    n20 -> n02 [color=yellow, penwidth=3];
+    n02 -> n52 [color=yellow, penwidth=3];
+    n52 -> n43 [color=yellow, penwidth=3];
+    n43 -> n40 [color=yellow, penwidth=3];
+    n40 -> End  [color=yellow, penwidth=3];
+
+    
+}

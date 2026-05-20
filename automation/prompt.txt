@@ -1,0 +1,9 @@
+Generate transitions for a state graph problem.
+
+Rules:
+- states must be valid
+- forbidden states are excluded
+- transitions must be legal
+
+Return format:
+state1 -> state2

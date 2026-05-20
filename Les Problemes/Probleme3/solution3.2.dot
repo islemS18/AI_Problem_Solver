@@ -1,0 +1,40 @@
+digraph Solution2 {
+    node [shape=circle];
+
+    // Nœuds particuliers
+    "(MMMMMCCCCCB|)"  [color=green];
+    "(|MMMMMCCCCCB)"  [color=blue];
+
+    // Étape 1 : 2C traversent →
+    "(MMMMMCCCCCB|)"  -> "(MMMMMCCC|CCB)"   [label="CC"  color=red fontcolor=blue];
+
+    // Étape 2 : 1C revient ←
+    "(MMMMMCCC|CCB)"  -> "(MMMMMCCCCB|C)"   [label="C"   color=red fontcolor=blue];
+
+    // Étape 3 : 3C traversent →
+    "(MMMMMCCCCB|C)"  -> "(MMMMMC|CCCCB)"   [label="CCC" color=red fontcolor=blue];
+
+    // Étape 4 : 1C revient ←
+    "(MMMMMC|CCCCB)"  -> "(MMMMMCCB|CCC)"   [label="C"   color=red fontcolor=blue];
+
+    // Étape 5 : 3M traversent →
+    "(MMMMMCCB|CCC)"  -> "(MMCC|MMMCCCB)"   [label="MMM" color=red fontcolor=blue];
+
+    // Étape 6 : 1M+1C reviennent ←
+    "(MMCC|MMMCCCB)"  -> "(MMMCCCB|MMCC)"   [label="MC"  color=red fontcolor=blue];
+
+    // Étape 7 : 3M traversent →
+    "(MMMCCCB|MMCC)"  -> "(CCC|MMMMMCCB)"   [label="MMM" color=red fontcolor=blue];
+
+    // Étape 8 : 1C revient ←
+    "(CCC|MMMMMCCB)"  -> "(CCCCB|MMMMMC)"   [label="C"   color=red fontcolor=blue];
+
+    // Étape 9 : 3C traversent →   ← DIVERGENCE ICI
+    "(CCCCB|MMMMMC)"  -> "(C|MMMMMCCCCB)"   [label="CCC" color=pink fontcolor=blue];
+
+    // Étape 10 : 1C revient ←
+    "(C|MMMMMCCCCB)"  -> "(CCB|MMMMMCCC)"   [label="C"   color=pink fontcolor=blue];
+
+    // Étape 11 : 2C traversent →
+    "(CCB|MMMMMCCC)"  -> "(|MMMMMCCCCCB)"   [label="CC"  color=pink fontcolor=blue];
+}
